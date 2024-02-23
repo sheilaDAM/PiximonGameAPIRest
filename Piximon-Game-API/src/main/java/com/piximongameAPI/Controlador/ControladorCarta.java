@@ -32,12 +32,13 @@ public class ControladorCarta {
 
    
 
-    //Método para obtener las cartaas no asignadas a ningún jugador (para el mercado)
+    //Método para obtener las cartas no asignadas a ningún jugador (para el mercado)
     @GetMapping("/obtenerCartasSinAsignar")
     List<Carta> obtenerCartasSinAsignar() {
         return servicioCarta.obtenerCartasSinAsignar();
     }
 
+    //Método para obtener las cartas que tienen alineación de un jugador concreto pasándole el id del jugador
     @GetMapping("/obtenerCartasAlineadasDeUnJugador/{id}")
     public List<Carta> obtenerCartasEnAlineacion(@PathVariable int id) {
         List<Carta> cartas = servicioCarta.recuperarCartasAlineadasDeJugador(id);

@@ -21,6 +21,9 @@ public class ControladorGenerarDatos {
     @Autowired
     private ServicioJugadorImpl servicioJugador;
 
+    //Con este endpoint inicializamos varios datos para poder ejecutar la partida como:
+    //creación de 4 bots, creación de 150 cartas, asignación de 20 a cada jugador
+    //y obtener una alineación de 9 cartas para cada jugador creado.
     @PostMapping("/generarDatos")
     public ResponseStatus generarDatos(@RequestBody Jugador jugador){
         try {

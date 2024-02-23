@@ -14,18 +14,5 @@ import java.util.List;
 @RestController
 @RequestMapping("/alineaciones")
 public class ControladorAlineacion {
-/*
-    @Autowired
-    private ServicioAlineacion servicioAlineacion;
-
-
-    @GetMapping("/obtenerCantidadAlineaciones")
-    public ResponseStatus listarCartas() {
-        int numAlineaciones = servicioAlineacion.comprobarSiHayAlineaciones();
-        return  new ResponseStatus(ResponseStatus.TipoCodigo.);
-    }
-
- */
-
 
 }
